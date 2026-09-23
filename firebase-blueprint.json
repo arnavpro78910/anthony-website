@@ -1,0 +1,100 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Accounts",
+      "description": "User profiles, roles, and status",
+      "fields": {
+        "email": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "hasSubmitted": { "type": "boolean" },
+        "submittedFormId": { "type": "string" },
+        "isBanned": { "type": "boolean" },
+        "bannedUntil": { "type": "string" },
+        "bannedAt": { "type": "string" },
+        "banReason": { "type": "string" },
+        "banDurationMinutes": { "type": "number" },
+        "submissionLimit": { "type": "number" },
+        "authProvider": { "type": "string" },
+        "emailVerified": { "type": "boolean" },
+        "avatarUrl": { "type": "string" },
+        "lastLoginAt": { "type": "string" },
+        "lastActiveAt": { "type": "number" },
+        "isOnline": { "type": "boolean" },
+        "lastLoginDevice": { "type": "string" },
+        "loginCount": { "type": "number" },
+        "lastAction": { "type": "string" },
+        "lastActionAt": { "type": "string" }
+      }
+    },
+    "submissions": {
+      "title": "Form Submissions",
+      "description": "Forms submitted by users to the intake portal",
+      "fields": {
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userName": { "type": "string" },
+        "templateId": { "type": "string" },
+        "formTitle": { "type": "string" },
+        "submittedAt": { "type": "string" },
+        "status": { "type": "string" },
+        "statusNotes": { "type": "string" },
+        "companyName": { "type": "string" },
+        "data": { "type": "object" },
+        "cloudSyncedAt": { "type": "string" },
+        "storageBackend": { "type": "string" },
+        "device": { "type": "string" }
+      }
+    },
+    "activity_logs": {
+      "title": "Real-time Live Activity Logs",
+      "description": "Cross-device real-time event logs for logins, registrations, and form submissions",
+      "fields": {
+        "type": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "device": { "type": "string" },
+        "details": { "type": "string" },
+        "meta": { "type": "object" }
+      }
+    },
+    "branding": {
+      "title": "Company Branding Settings",
+      "description": "Portal company configuration",
+      "fields": {
+        "companyName": { "type": "string" },
+        "tagline": { "type": "string" },
+        "supportEmail": { "type": "string" },
+        "officeLocation": { "type": "string" },
+        "department": { "type": "string" },
+        "logoUrl": { "type": "string" },
+        "logoType": { "type": "string" },
+        "themePreset": { "type": "string" },
+        "primaryWelcomeMessage": { "type": "string" },
+        "instructionsText": { "type": "string" },
+        "phoneSupport": { "type": "string" },
+        "websiteUrl": { "type": "string" }
+      }
+    },
+    "form_blueprints": {
+      "title": "Form Blueprint Schemas",
+      "description": "Dynamic form templates, schema configurations, sections, fields and form settings managed by administrator",
+      "fields": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "iconName": { "type": "string" },
+        "estimatedTime": { "type": "string" },
+        "department": { "type": "string" },
+        "sections": { "type": "array" },
+        "fields": { "type": "array" },
+        "settings": { "type": "object" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}

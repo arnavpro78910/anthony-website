@@ -1,0 +1,6 @@
+{
+  "name": "Company Form Portal",
+  "description": "Corporate form intake portal with Google OAuth & email verification, cloud database persistence via Firebase Firestore, 1-submission-per-account quota enforcement, submitter status tracking, and full master admin governance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
